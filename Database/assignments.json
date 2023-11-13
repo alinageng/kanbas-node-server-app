@@ -1,0 +1,83 @@
+[
+  {
+    "_id": "A101",
+    "title": "Propulsion Assignment",
+    "course": "RS101",
+    "description": "Assignment About Propulsion",
+    "dueDate": "2023-05-15",
+    "availableFromDate": "_id",
+    "AvailableUntilDate": "2023-05-15"
+  },
+  {
+    "_id": "A102",
+    "title": "Combustion Analysis",
+    "course": "RS101",
+    "description": "Assignment About Combustion",
+    "dueDate": "2023-05-15",
+    "availableFromDate": "2023-05-15",
+    "AvailableUntilDate": "2023-05-15"
+  },
+  {
+    "_id": "A103",
+    "title": "Nozzle Design Project",
+    "course": "RS101",
+    "description": "Assignment About Nozzle",
+    "dueDate": "2023-05-15",
+    "availableFromDate": "2023-05-15",
+    "AvailableUntilDate": "2023-05-15"
+  },
+  {
+    "_id": "A201",
+    "title": "Aerodynamics Quiz",
+    "course": "RS102",
+    "description": "Assignment About Aerodynamics",
+    "dueDate": "2023-05-15",
+    "availableFromDate": "2023-05-15",
+    "AvailableUntilDate": "2023-05-15"
+  },
+  {
+    "_id": "A202",
+    "title": "Flow Analysis",
+    "course": "RS102",
+    "description": "Assignment About Flow",
+    "dueDate": "2023-05-15",
+    "availableFromDate": "2023-05-15",
+    "AvailableUntilDate": "2023-05-15"
+  },
+  {
+    "_id": "A203",
+    "title": "Heating Analysis",
+    "course": "RS102",
+    "description": "Assignment About Heating",
+    "dueDate": "2023-05-15",
+    "availableFromDate": "2023-05-15",
+    "AvailableUntilDate": "2023-05-15"
+  },
+  {
+    "_id": "A301",
+    "title": "Structural Design Task",
+    "course": "RS103",
+    "description": "Assignment About Structures",
+    "dueDate": "2023-05-15",
+    "availableFromDate": "2023-05-15",
+    "AvailableUntilDate": "2023-05-15"
+  },
+  {
+    "_id": "A302",
+    "title": "Orbital Calculations",
+    "course": "RS103",
+    "description": "Assignment about Orbital",
+    "dueDate": "2023-05-15",
+    "availableFromDate": "2023-05-15",
+    "AvailableUntilDate": "2023-05-15"
+  },
+  {
+    "_id": "A303",
+    "title": "Systems Engineering Exam",
+    "course": "RS103",
+    "description": "Assignment Systems",
+    "dueDate": "2023-05-15",
+    "availableFromDate": "2023-05-15",
+    "AvailableUntilDate": "2023-05-15"
+  }
+]
