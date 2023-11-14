@@ -19,7 +19,6 @@ const Lab5 = (app) => {
     if (completed !== undefined) {
       const completedTodos = todos.filter(
       (t) => t.completed.toString() === completed);
-      console.log(completedTodos)
       res.json(completedTodos);
       return;
     }

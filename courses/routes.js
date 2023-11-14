@@ -14,9 +14,6 @@ function CourseRoutes(app) {
   });
   app.delete("/api/courses/:id", (req, res) => {
     const { id } = req.params;
-    console.log("here");
-    console.log("deleting course : " + req.params.id);
-
     Database.courses = Database.courses
       .filter((c) => c._id !== id);
     res.sendStatus(204);
@@ -28,7 +25,6 @@ function CourseRoutes(app) {
       c._id === id ? { c, ...course } : c
     );
     res.send(course);
-    // res.sendStatus(204);
   });
   app.get("/api/courses/:id", (req, res) => {
     const { id } = req.params;
@@ -50,10 +46,6 @@ function CourseRoutes(app) {
     };
     res.sendStatus(204);
   });
-
-
-
-
 
 }
 export default CourseRoutes;
