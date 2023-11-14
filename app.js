@@ -5,7 +5,7 @@ import cors from "cors";
 import CourseRoutes from "./courses/routes.js";
 import ModuleRoutes from "./modules/routes.js";
 import "dotenv/config";
-const allowedOrigins = [process.env.FRONTEND_URL, "https://spontaneous-entremet-bf69b2.netlify.app"];
+const allowedOrigins = [process.env.FRONTEND_URL, "https://a5--spontaneous-entremet-bf69b2.netlify.app/"];
 const app = express();
 app.use(
   cors({
