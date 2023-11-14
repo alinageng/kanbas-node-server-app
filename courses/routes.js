@@ -40,6 +40,16 @@ function CourseRoutes(app) {
     }
     res.send(course);
   });
+  app.put("/api/modules/:mid", (req, res) => {
+    const { mid } = req.params;
+    const moduleIndex = Database.modules.findIndex(
+      (m) => m._id === mid);
+    Database.modules[moduleIndex] = {
+      ...Database.modules[moduleIndex],
+      ...req.body
+    };
+    res.sendStatus(204);
+  });
 
 
 
