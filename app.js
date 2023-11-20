@@ -5,6 +5,9 @@ import cors from "cors";
 import CourseRoutes from "./courses/routes.js";
 import ModuleRoutes from "./modules/routes.js";
 import "dotenv/config";
+import mongoose from "mongoose";
+mongoose.connect("mongodb://127.0.0.1:27017/kanbas");
+
 const allowedOrigins = [process.env.FRONTEND_URL, "https://a5--spontaneous-entremet-bf69b2.netlify.app"];
 const app = express();
 app.use(
