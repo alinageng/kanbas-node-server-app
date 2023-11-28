@@ -8,15 +8,16 @@ import UserRoutes from "./users/routes.js"
 import "dotenv/config";
 import session from "express-session";
 
+
 import mongoose from "mongoose";
 mongoose.connect("mongodb://127.0.0.1:27017/kanbas");
 
-const allowedOrigins = [process.env.FRONTEND_URL, "https://a5--spontaneous-entremet-bf69b2.netlify.app"];
+// const allowedOrigins = [process.env.FRONTEND_URL, "https://a5--spontaneous-entremet-bf69b2.netlify.app"];
 const app = express();
 app.use(
   cors({
     credentials: true,
-    origin: allowedOrigins
+    origin: process.env.FRONTEND_URL
   })
 );
 const sessionOptions = {
@@ -24,6 +25,15 @@ const sessionOptions = {
   resave: false,
   saveUninitialized: false,
 };
+if (process.env.NODE_ENV !== "development") {
+  sessionOptions.proxy = true;
+  sessionOptions.cookie = {
+    sameSite: "none",
+    secure: true,
+  };
+}
+app.use(session(sessionOptions));
+
 app.use(
   session(sessionOptions)
 );
