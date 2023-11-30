@@ -9,14 +9,15 @@ function UserRoutes(app) {
     res.json(status);
   };
   const findAllUsers = async (req, res) => {
+    console.log("at /users/")
     const users = await dao.findAllUsers();
+    console.log("got users:" , users);
     res.json(users);
   };
   const findUserById = async (req, res) => {
     const user = await dao.findUserById(req.params.userId);
     res.json(user);
   };
-
   const updateUser = async (req, res) => {
     const { userId } = req.params;
     const status = await dao.updateUser(userId, req.body);
@@ -30,8 +31,8 @@ function UserRoutes(app) {
     const user = await dao.findUserByUsername(
       req.body.username);
     if (user) {
-      res.status(400).json(
-        { message: "Username already taken" });
+      res.status(400).json
+        { message: "Username already taken" };
     }
     const currentUser = await dao.createUser(req.body);
     req.session['currentUser'] = currentUser;
